@@ -38,8 +38,8 @@ class HomePage extends StatelessWidget {
           ),
         ),
         SliverList(delegate: SliverChildBuilderDelegate((context, index) {
-          return PostCard();
-        }, childCount: 5
+          return PostCard(post: posts[index]);
+        }, childCount: posts.length,
         )
     ),
       ],
